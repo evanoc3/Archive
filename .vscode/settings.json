@@ -1,5 +1,18 @@
 {
 	"terminal.integrated.env.osx": {
 		"PYTHONPATH": "${env:PYTHONPATH}:${workspaceFolder}/src"
-	}
+	},
+	"python.testing.unittestArgs": [
+		"-v", "-s", "./src", "-p", "*_test.py"
+	],
+	"python.testing.unittestEnabled": true,
+	"files.exclude": {
+		"**/.git": false,
+		"**/.DS_Store": true,
+	},
+	"[python]": {
+		"editor.formatOnType": true,
+		"editor.insertSpaces": false,
+		"editor.tabSize": 4
+	},
 }
